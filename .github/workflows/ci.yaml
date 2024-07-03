@@ -15,13 +15,13 @@ jobs:
                       manylinux_arch: aarch64
                       docker_image: arm64v8/debian:buster
 
-                    - arch: ppc64le
-                      manylinux_arch: ppc64le
-                      docker_image: ppc64le/debian:buster
+                    # - arch: ppc64le
+                    #   manylinux_arch: ppc64le
+                    #   docker_image: ppc64le/debian:buster
 
-                    - arch: s390x
-                      manylinux_arch: s390x
-                      docker_image: s390x/debian:buster
+                    # - arch: s390x
+                    #   manylinux_arch: s390x
+                    #   docker_image: s390x/debian:buster
 
         env:
             BASE_IMAGE: ${{ matrix.docker_image }}
